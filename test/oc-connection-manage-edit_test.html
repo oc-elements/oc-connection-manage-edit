@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>oc-connection-manage-edit test</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../../web-component-tester/browser.js"></script>
+
+    <link rel="import" href="../oc-connection-manage-edit.html">
+  </head>
+  <body>
+    <test-fixture id="basic">
+      <template>
+        <oc-connection-manage-edit></oc-connection-manage-edit>
+      </template>
+    </test-fixture>
+
+    <script>
+      suite('oc-connection-manage-edit', function() {
+        test('instantiating the element works', function() {
+          var element = fixture('basic');
+          assert.equal(element.is, 'oc-connection-manage-edit');
+        });
+      });
+    </script>
+  </body>
+</html>
